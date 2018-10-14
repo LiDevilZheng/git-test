@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//WebRoot/manage/user-modify.jsp=UTF-8
+encoding//WebRoot/manage/user.jsp=UTF-8
+encoding//src/com/yimaisc/comment/PageBean.java=UTF-8
+encoding//src/com/yimaisc/dao/BaseDao.java=UTF-8
+encoding//src/com/yimaisc/dao/CategoryDao.java=UTF-8
+encoding//src/com/yimaisc/dao/CommentDao.java=UTF-8
+encoding//src/com/yimaisc/dao/NewsDao.java=UTF-8
+encoding//src/com/yimaisc/manage/action/AddProductAction.java=UTF-8
+encoding//src/com/yimaisc/manage/action/UpdateCommentAction.java=UTF-8
+encoding//src/com/yimaisc/manage/action/UpdateSuccessAction.java=UTF-8
+encoding//src/com/yimaisc/manage/action/UpdateUserAction.java=UTF-8
+encoding//src/com/yimaisc/service/CategoryService.java=UTF-8
+encoding//src/com/yimaisc/service/CommentService.java=UTF-8
+encoding/<project>=UTF-8

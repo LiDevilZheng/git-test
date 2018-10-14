@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  
+  <filter>
+  	<filter-name>CharacterEncodingFilter</filter-name>
+  	<filter-class>com.yimaisc.filter.CharacterEncodingFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>CharacterEncodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+  	<filter-name>RootManageFilter</filter-name>
+  	<filter-class>com.yimaisc.filter.RootManageFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>RootManageFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewsAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.NewsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddNewsAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.AddNewsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.UpdateAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateSuccessAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.UpdateSuccessAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DelNewsAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.DelNewsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AllUserAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.AllUserAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DelUserAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.DelUserAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindByUserIdAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.FindByUserIdAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateUserAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.UpdateUserAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GuestBookAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.GuestBookAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GuestSelectAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.GuestSelectAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateCommentAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.UpdateCommentAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ProductAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.ProductAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DelGuestAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.DelGuestAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AllProductClassAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.AllProductClassAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddProductClassAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.AddProductClassAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindProductClassAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.FindProductClassAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DelProductClassAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.DelProductClassAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateProductAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.UpdateProductAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AllProductAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.AllProductAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddProductAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.AddProductAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.OrderAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DelProductAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.DelProductAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ProductModifyAction</servlet-name>
+    <servlet-class>com.yimaisc.manage.action.ProductModifyAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AuthImg</servlet-name>
+    <servlet-class>com.yimaisc.action.AuthImg</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>com.yimaisc.action.LoginAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>IndexAction</servlet-name>
+    <servlet-class>com.yimaisc.action.IndexAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ProductViewAction</servlet-name>
+    <servlet-class>com.yimaisc.action.ProductViewAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewsViewAction</servlet-name>
+    <servlet-class>com.yimaisc.action.NewsViewAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterAction</servlet-name>
+    <servlet-class>com.yimaisc.action.RegisterAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ProductListAction</servlet-name>
+    <servlet-class>com.yimaisc.action.ProductListAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GuestAction</servlet-name>
+    <servlet-class>com.yimaisc.action.GuestAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddGuestAction</servlet-name>
+    <servlet-class>com.yimaisc.action.AddGuestAction</servlet-class>
+  </servlet>
+	<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddCartAction</servlet-name>
+    <servlet-class>com.yimaisc.action.AddCartAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateNumAction</servlet-name>
+    <servlet-class>com.yimaisc.action.UpdateNumAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ClearCartAction</servlet-name>
+    <servlet-class>com.yimaisc.action.ClearCartAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddressAction</servlet-name>
+    <servlet-class>com.yimaisc.action.AddressAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddAddressAction</servlet-name>
+    <servlet-class>com.yimaisc.action.AddAddressAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SettleAccountsAction</servlet-name>
+    <servlet-class>com.yimaisc.action.SettleAccountsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginOutAction</servlet-name>
+    <servlet-class>com.yimaisc.action.LoginOutAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DelCartAction</servlet-name>
+    <servlet-class>com.yimaisc.action.DelCartAction</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>NewsAction</servlet-name>
+    <url-pattern>/manage/news.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddNewsAction</servlet-name>
+    <url-pattern>/manage/doAdd.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateAction</servlet-name>
+    <url-pattern>/manage/doUpdate.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateSuccessAction</servlet-name>
+    <url-pattern>/manage/updateSuccess.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelNewsAction</servlet-name>
+    <url-pattern>/manage/del.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AllUserAction</servlet-name>
+    <url-pattern>/manage/user.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelUserAction</servlet-name>
+    <url-pattern>/manage/delUser.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindByUserIdAction</servlet-name>
+    <url-pattern>/manage/user-modify.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateUserAction</servlet-name>
+    <url-pattern>/manage/doUpdateUser.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GuestBookAction</servlet-name>
+    <url-pattern>/manage/guestbook.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GuestSelectAction</servlet-name>
+    <url-pattern>/manage/guestbook-modify.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateCommentAction</servlet-name>
+    <url-pattern>/manage/updateComment.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductAction</servlet-name>
+    <url-pattern>/manage/productClass.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelGuestAction</servlet-name>
+    <url-pattern>/manage/delGuest.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AllProductClassAction</servlet-name>
+    <url-pattern>/manage/allProduct.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddProductClassAction</servlet-name>
+    <url-pattern>/manage/addProduct.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindProductClassAction</servlet-name>
+    <url-pattern>/manage/productClass-modify.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelProductClassAction</servlet-name>
+    <url-pattern>/manage/delProductClass.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateProductAction</servlet-name>
+    <url-pattern>/manage/updateProduct.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AllProductAction</servlet-name>
+    <url-pattern>/manage/product.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddProductAction</servlet-name>
+    <url-pattern>/manage/addProduction.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderAction</servlet-name>
+    <url-pattern>/manage/order.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelProductAction</servlet-name>
+    <url-pattern>/manage/delProduct.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductModifyAction</servlet-name>
+    <url-pattern>/manage/product-modify.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AuthImg</servlet-name>
+    <url-pattern>/AuthImg.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginAction</servlet-name>
+    <url-pattern>/login.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IndexAction</servlet-name>
+    <url-pattern>/index.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductViewAction</servlet-name>
+    <url-pattern>/product-view.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsViewAction</servlet-name>
+    <url-pattern>/news-view.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterAction</servlet-name>
+    <url-pattern>/reg.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductListAction</servlet-name>
+    <url-pattern>/product-list.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GuestAction</servlet-name>
+    <url-pattern>/guest.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddGuestAction</servlet-name>
+    <url-pattern>/addGuest.action</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>AddCartAction</servlet-name>
+    <url-pattern>/addCart.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateNumAction</servlet-name>
+    <url-pattern>/updateNum.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ClearCartAction</servlet-name>
+    <url-pattern>/clear.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddressAction</servlet-name>
+    <url-pattern>/address.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddAddressAction</servlet-name>
+    <url-pattern>/addAddress.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SettleAccountsAction</servlet-name>
+    <url-pattern>/settleAccounts.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginOutAction</servlet-name>
+    <url-pattern>/loginOut.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelCartAction</servlet-name>
+    <url-pattern>/delCart.action</url-pattern>
+  </servlet-mapping>
+<welcome-file-list>
+    <welcome-file>index.action</welcome-file>
+  </welcome-file-list>
+</web-app>
