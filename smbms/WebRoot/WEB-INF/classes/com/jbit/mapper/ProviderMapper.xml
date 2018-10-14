@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jbit.dao.ProviderDao">
+	<select id="getCount" resultType="Integer">
+		SELECT COUNT(1) FROM smbms_provider WHERE 1=1
+		<if test="proCode!=null">
+			AND proCode LIKE CONCAT('%',#{proCode},'%')
+		</if>
+		<if test="proName!=null">
+			AND proName LIKE CONCAT('%',#{proName},'%')
+		</if>	
+	</select>
+	<select id="findProvider" resultType="Provider">
+		SELECT id,proCode,proName,proDesc,proContact,proPhone,proAddress,
+		proFax,createdBy,creationDate,modifyDate,modifyBy 
+		FROM smbms_provider 
+		WHERE 1=1
+		<if test="proCode!=null">
+			AND proCode LIKE CONCAT('%',#{proCode},'%')
+		</if>
+		<if test="proName!=null">
+			AND proName LIKE CONCAT('%',#{proName},'%')
+		</if>
+		LIMIT #{from},#{offset}
+	</select>
+	<select id="findById" resultType="Provider">
+		SELECT id,proCode,proName,proDesc,proContact,proPhone,proAddress,
+		proFax,createdBy,creationDate,modifyDate,modifyBy 
+		FROM smbms_provider 
+		WHERE id=#{id}
+	</select>
+	<select id="findByProCode" resultType="Provider">
+		SELECT id,proCode,proName,proDesc,proContact,proPhone,proAddress,
+		proFax,createdBy,creationDate,modifyDate,modifyBy 
+		FROM smbms_provider 
+		WHERE proCode=#{proCode}
+	</select>
+	<insert id="addProvider">
+		INSERT INTO smbms_provider (proCode,proName,proDesc,proContact,
+		proPhone,proAddress,proFax,createdBy,creationDate,idPic,workPic) 
+		VALUES(#{proCode},#{proName},#{proDesc},#{proContact},
+		#{proPhone},#{proAddress},#{proFax},#{createdBy},#{creationDate},#{idPic},#{workPic})
+	</insert>
+	<select id="getAllproName" resultType="Provider">
+		SELECT * FROM smbms_provider		
+	</select>
+</mapper>

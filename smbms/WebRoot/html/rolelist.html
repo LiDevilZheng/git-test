@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>前后端分离开发模式</title>	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$.ajax({
+				url:"../jsp/roles",
+				type:"GET",
+				dataType:"json",
+				success:function(result){
+					var str="<table border='1'><tr><td>id</td><td>编码</td><td>名称</td></tr>";
+					for(var i=0;i<result.length;i++){
+						str+="<tr><td><a href='javascript:findById("+result[i].id+")'>"+result[i].id+"</a></td><td>"+result[i].roleCode+"</td><td>"+result[i].roleName+"</td></tr>";
+					}
+					str+="</table>"
+					$("#roles").html(str);
+				}
+			});
+		});
+		function findById(id){
+			$.ajax({
+				url:"../jsp/roles/"+id,
+				type:"GET",
+				dataType:"json",
+				success:function(result){
+					var str="<p>编号:"+result.id+"</p>";					
+						str+="<p>编码:"+result.roleCode+"</p>";
+						str+="<p>名称:"+result.roleName+"</p>";
+						str+="<p>创建日期:"+result.creationDate+"</p>";
+					$("#roleInfo").html(str);
+				}
+			});
+		}
+	</script>
+  </head>
+  <body>
+  	<div id="roles"></div>
+    <div id="roleInfo" style="border:1px solid red; width:200px;"></div>
+  </body>
+</html>
